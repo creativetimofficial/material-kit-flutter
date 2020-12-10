@@ -593,14 +593,7 @@ class _ComponentsState extends State<Components> {
                         title: homeCards["Ice Cream"]['title'],
                         img: homeCards["Ice Cream"]['image'],
                         tap: () {
-                          // Navigator.push(
-                          //     context,
-                          //     MaterialPageRoute(
-                          //       builder: (context) => Product(
-                          //         title: homeCards["Ice Cream"]['title'],
-                          //         urlImg: homeCards["Ice Cream"]['image'],
-                          //       ),
-                          //     ));
+                          Navigator.pushReplacementNamed(context, '/pro');
                         }),
                   ),
                   SizedBox(height: 8.0),
@@ -612,28 +605,14 @@ class _ComponentsState extends State<Components> {
                           title: homeCards["Makeup"]['title'],
                           img: homeCards["Makeup"]['image'],
                           tap: () {
-                            // Navigator.push(
-                            //     context,
-                            //     MaterialPageRoute(
-                            //       builder: (context) => Product(
-                            //         title: homeCards["Makeup"]['title'],
-                            //         urlImg: homeCards["Makeup"]['image'],
-                            //       ),
-                            //     ));
+                            Navigator.pushReplacementNamed(context, '/pro');
                           }),
                       CardSmall(
                           cta: "View article",
                           title: homeCards["Coffee"]['title'],
                           img: homeCards["Coffee"]['image'],
                           tap: () {
-                            // Navigator.push(
-                            //     context,
-                            //     MaterialPageRoute(
-                            //       builder: (context) => Product(
-                            //         title: homeCards["Coffee"]['title'],
-                            //         urlImg: homeCards["Coffee"]['image'],
-                            //       ),
-                            //     ));
+                            Navigator.pushReplacementNamed(context, '/pro');
                           })
                     ],
                   ),
@@ -643,14 +622,7 @@ class _ComponentsState extends State<Components> {
                       title: homeCards["Fashion"]['title'],
                       img: homeCards["Fashion"]['image'],
                       tap: () {
-                        // Navigator.push(
-                        //     context,
-                        //     MaterialPageRoute(
-                        //       builder: (context) => Product(
-                        //         title: homeCards["Fashion"]['title'],
-                        //         urlImg: homeCards["Fashion"]['image'],
-                        //       ),
-                        //     ));
+                        Navigator.pushReplacementNamed(context, '/pro');
                       }),
                   SizedBox(height: 8.0),
                   Padding(
@@ -660,14 +632,7 @@ class _ComponentsState extends State<Components> {
                         title: homeCards["Argon"]['title'],
                         img: homeCards["Argon"]['image'],
                         tap: () {
-                          // Navigator.push(
-                          //     context,
-                          //     MaterialPageRoute(
-                          //       builder: (context) => Product(
-                          //         title: homeCards["Argon"]['title'],
-                          //         urlImg: homeCards["Argon"]['image'],
-                          //       ),
-                          //     ));
+                          Navigator.pushReplacementNamed(context, '/pro');
                         }),
                   ),
                   CardCategory(

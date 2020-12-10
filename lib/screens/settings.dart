@@ -87,10 +87,7 @@ class _SettingsState extends State<Settings> {
                 TableCellSettings(
                     title: "Notifications",
                     onTap: () {
-                      // Navigator.push(
-                      //     context,
-                      //     MaterialPageRoute(
-                      //         builder: (context) => NotificationsSettings()));
+                      Navigator.pushReplacementNamed(context, '/pro');
                     }),
                 SizedBox(height: 36.0),
                 Center(
@@ -135,22 +132,17 @@ class _SettingsState extends State<Settings> {
                 TableCellSettings(
                     title: "User Agreement",
                     onTap: () {
-                      // Navigator.push(
-                      //     context,
-                      //     MaterialPageRoute(
-                      //         builder: (context) => UserAgreement()));
+                      Navigator.pushReplacementNamed(context, '/pro');
                     }),
                 TableCellSettings(
                     title: "Privacy",
                     onTap: () {
-                      // Navigator.push(context,
-                      //     MaterialPageRoute(builder: (context) => Privacy()));
+                      Navigator.pushReplacementNamed(context, '/pro');
                     }),
                 TableCellSettings(
                     title: "About",
                     onTap: () {
-                      // Navigator.push(context,
-                      //     MaterialPageRoute(builder: (context) => About()));
+                      Navigator.pushReplacementNamed(context, '/pro');
                     }),
               ],
             ),
