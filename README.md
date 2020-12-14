@@ -6,7 +6,7 @@
 
 ![Product Gif](https://raw.githubusercontent.com/creativetimofficial/public-assets/master/material-flutter/opt_mk_flutter_thumbnail.jpg)
 
-Material Kit Flutter is a premium mobile UI template built with Google's [Flutter](https://flutter.dev/) allowing you to create powerful and beautiful mobile applications.. We have redesigned all the usual components in order to make it look like Argon's Design System, minimalistic and easy to use.
+Material Kit Flutter is a premium mobile UI template built with Google's [Flutter](https://flutter.dev/) allowing you to create powerful and beautiful mobile applications.. We have redesigned all the usual components in order to make it look like Google Design System, minimalistic and easy to use.
 
 Start your development with a badass material UI Kit for Flutter inspired by Material Design. If you like Google's Material Design, you will love this flutter kit! It features a huge number of components and screens built to fit together and look amazing. 
 
@@ -137,7 +137,7 @@ If you have questions or need help integrating the product please [contact us](h
 
 ## Licensing
 
-- Copyright 2018 Creative Tim (https://www.creative-tim.com/)
+- Copyright 2020 Creative Tim (https://www.creative-tim.com/)
 
 - Creative Tim [license](https://www.creative-tim.com/license)
 
