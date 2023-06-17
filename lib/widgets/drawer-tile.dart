@@ -10,16 +10,16 @@ class DrawerTile extends StatelessWidget {
   final Color iconColor;
 
   DrawerTile(
-      {this.title,
-      this.icon,
-      this.onTap,
+      {required this.title,
+      required this.icon,
+      required this.onTap,
       this.isSelected = false,
       this.iconColor = Colors.black});
 
   @override
   Widget build(BuildContext context) {
     return GestureDetector(
-        onTap: onTap,
+        onTap: () => onTap,
         child: Container(
             height: 45,
             padding: EdgeInsets.symmetric(horizontal: 16),

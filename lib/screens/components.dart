@@ -91,8 +91,8 @@ class Components extends StatefulWidget {
 }
 
 class _ComponentsState extends State<Components> {
-  bool switchValueOne;
-  bool switchValueTwo;
+  late bool switchValueOne;
+  late bool switchValueTwo;
 
   void initState() {
     setState(() {
@@ -132,16 +132,20 @@ class _ComponentsState extends State<Components> {
                 child: Padding(
                   padding:
                       const EdgeInsets.only(left: 34.0, right: 34.0, top: 16),
-                  child: RaisedButton(
-                    textColor: Colors.white,
-                    color: MaterialColors.defaultButton,
+                  child: ElevatedButton(
+                    style: ButtonStyle(
+                      backgroundColor: MaterialStatePropertyAll<Color>(MaterialColors.defaultButton),
+                      textStyle: MaterialStatePropertyAll<TextStyle>(TextStyle(color: Colors.white)),
+                      shape: MaterialStatePropertyAll<RoundedRectangleBorder>(
+                        RoundedRectangleBorder(
+                          borderRadius: BorderRadius.circular(4.0),
+                        ),
+                      ),
+                    ),
                     onPressed: () {
                       // Respond to button press
                       Navigator.pushReplacementNamed(context, '/home');
                     },
-                    shape: RoundedRectangleBorder(
-                      borderRadius: BorderRadius.circular(4.0),
-                    ),
                     child: Padding(
                         padding: EdgeInsets.only(
                             left: 16.0, right: 16.0, top: 12, bottom: 12),
@@ -156,16 +160,20 @@ class _ComponentsState extends State<Components> {
                 child: Padding(
                   padding:
                       const EdgeInsets.only(left: 34.0, right: 34.0, top: 8),
-                  child: RaisedButton(
-                    textColor: Colors.white,
-                    color: MaterialColors.primary,
+                  child: ElevatedButton(
+                    style: ButtonStyle(
+                      backgroundColor: MaterialStatePropertyAll<Color>(MaterialColors.primary),
+                      textStyle: MaterialStatePropertyAll<TextStyle>(TextStyle(color: Colors.white)),
+                      shape: MaterialStatePropertyAll<RoundedRectangleBorder>(
+                        RoundedRectangleBorder(
+                          borderRadius: BorderRadius.circular(4.0),
+                        ),
+                      ),
+                    ),
                     onPressed: () {
                       // Respond to button press
                       Navigator.pushReplacementNamed(context, '/home');
                     },
-                    shape: RoundedRectangleBorder(
-                      borderRadius: BorderRadius.circular(4.0),
-                    ),
                     child: Padding(
                         padding: EdgeInsets.only(
                             left: 16.0, right: 16.0, top: 12, bottom: 12),
@@ -180,16 +188,20 @@ class _ComponentsState extends State<Components> {
                 child: Padding(
                   padding:
                       const EdgeInsets.only(left: 34.0, right: 34.0, top: 8),
-                  child: RaisedButton(
-                    textColor: Colors.white,
-                    color: MaterialColors.info,
+                  child: ElevatedButton(
+                    style: ButtonStyle(
+                      backgroundColor: MaterialStatePropertyAll<Color>(MaterialColors.info),
+                      textStyle: MaterialStatePropertyAll<TextStyle>(TextStyle(color: Colors.white)),
+                      shape: MaterialStatePropertyAll<RoundedRectangleBorder>(
+                        RoundedRectangleBorder(
+                          borderRadius: BorderRadius.circular(4.0),
+                        ),
+                      ),
+                    ),
                     onPressed: () {
                       // Respond to button press
                       Navigator.pushReplacementNamed(context, '/home');
                     },
-                    shape: RoundedRectangleBorder(
-                      borderRadius: BorderRadius.circular(4.0),
-                    ),
                     child: Padding(
                         padding: EdgeInsets.only(
                             left: 16.0, right: 16.0, top: 12, bottom: 12),
@@ -204,16 +216,20 @@ class _ComponentsState extends State<Components> {
                 child: Padding(
                   padding:
                       const EdgeInsets.only(left: 34.0, right: 34.0, top: 8),
-                  child: RaisedButton(
-                    textColor: Colors.white,
-                    color: MaterialColors.success,
+                  child: ElevatedButton(
+                    style: ButtonStyle(
+                      backgroundColor: MaterialStatePropertyAll<Color>(MaterialColors.success),
+                      textStyle: MaterialStatePropertyAll<TextStyle>(TextStyle(color: Colors.white)),
+                      shape: MaterialStatePropertyAll<RoundedRectangleBorder>(
+                        RoundedRectangleBorder(
+                          borderRadius: BorderRadius.circular(4.0),
+                        ),
+                      ),
+                    ),
                     onPressed: () {
                       // Respond to button press
                       Navigator.pushReplacementNamed(context, '/home');
                     },
-                    shape: RoundedRectangleBorder(
-                      borderRadius: BorderRadius.circular(4.0),
-                    ),
                     child: Padding(
                         padding: EdgeInsets.only(
                             left: 16.0, right: 16.0, top: 12, bottom: 12),
@@ -228,16 +244,20 @@ class _ComponentsState extends State<Components> {
                 child: Padding(
                   padding:
                       const EdgeInsets.only(left: 34.0, right: 34.0, top: 8),
-                  child: RaisedButton(
-                    textColor: Colors.white,
-                    color: MaterialColors.warning,
+                  child: ElevatedButton(
+                    style: ButtonStyle(
+                      backgroundColor: MaterialStatePropertyAll<Color>(MaterialColors.warning),
+                      textStyle: MaterialStatePropertyAll<TextStyle>(TextStyle(color: Colors.white)),
+                      shape: MaterialStatePropertyAll<RoundedRectangleBorder>(
+                        RoundedRectangleBorder(
+                          borderRadius: BorderRadius.circular(4.0),
+                        ),
+                      ),
+                    ),
                     onPressed: () {
                       // Respond to button press
                       Navigator.pushReplacementNamed(context, '/home');
                     },
-                    shape: RoundedRectangleBorder(
-                      borderRadius: BorderRadius.circular(4.0),
-                    ),
                     child: Padding(
                         padding: EdgeInsets.only(
                             left: 16.0, right: 16.0, top: 12, bottom: 12),
@@ -252,16 +272,20 @@ class _ComponentsState extends State<Components> {
                 child: Padding(
                   padding:
                       const EdgeInsets.only(left: 34.0, right: 34.0, top: 8),
-                  child: RaisedButton(
-                    textColor: Colors.white,
-                    color: MaterialColors.error,
+                  child: ElevatedButton(
+                    style: ButtonStyle(
+                      backgroundColor: MaterialStatePropertyAll<Color>(MaterialColors.error),
+                      textStyle: MaterialStatePropertyAll<TextStyle>(TextStyle(color: Colors.white)),
+                      shape: MaterialStatePropertyAll<RoundedRectangleBorder>(
+                        RoundedRectangleBorder(
+                          borderRadius: BorderRadius.circular(4.0),
+                        ),
+                      ),
+                    ),
                     onPressed: () {
                       // Respond to button press
                       Navigator.pushReplacementNamed(context, '/home');
                     },
-                    shape: RoundedRectangleBorder(
-                      borderRadius: BorderRadius.circular(4.0),
-                    ),
                     child: Padding(
                         padding: EdgeInsets.only(
                             left: 16.0, right: 16.0, top: 12, bottom: 12),
@@ -391,7 +415,6 @@ class _ComponentsState extends State<Components> {
                 padding: const EdgeInsets.only(top: 16.0),
                 child: Input(
                   placeholder: "warning",
-                  borderColor: MaterialColors.warning,
                   focusedBorderColor: MaterialColors.warning,
                   enabledBorderColor: MaterialColors.warning,
                   textColor: MaterialColors.warning,
@@ -402,7 +425,6 @@ class _ComponentsState extends State<Components> {
                 padding: const EdgeInsets.only(top: 16.0),
                 child: Input(
                   placeholder: "danger",
-                  borderColor: MaterialColors.error,
                   focusedBorderColor: MaterialColors.error,
                   enabledBorderColor: MaterialColors.error,
                   textColor: MaterialColors.error,
@@ -414,7 +436,6 @@ class _ComponentsState extends State<Components> {
                 child: Input(
                   placeholder: "outline border",
                   outlineBorder: true,
-                  borderColor: MaterialColors.muted,
                   focusedBorderColor: MaterialColors.muted,
                   enabledBorderColor: MaterialColors.muted,
                   textColor: MaterialColors.muted,
@@ -426,7 +447,6 @@ class _ComponentsState extends State<Components> {
                 child: Input(
                   placeholder: "icon right",
                   outlineBorder: true,
-                  borderColor: MaterialColors.muted,
                   focusedBorderColor: MaterialColors.muted,
                   enabledBorderColor: MaterialColors.muted,
                   textColor: MaterialColors.muted,
@@ -590,8 +610,8 @@ class _ComponentsState extends State<Components> {
                     padding: const EdgeInsets.only(top: 16.0),
                     child: CardHorizontal(
                         cta: "View article",
-                        title: homeCards["Ice Cream"]['title'],
-                        img: homeCards["Ice Cream"]['image'],
+                        title: homeCards["Ice Cream"]!['title']!,
+                        img: homeCards["Ice Cream"]!['image']!,
                         tap: () {
                           Navigator.pushReplacementNamed(context, '/pro');
                         }),
@@ -602,15 +622,15 @@ class _ComponentsState extends State<Components> {
                     children: [
                       CardSmall(
                           cta: "View article",
-                          title: homeCards["Makeup"]['title'],
-                          img: homeCards["Makeup"]['image'],
+                          title: homeCards["Makeup"]!['title']!,
+                          img: homeCards["Makeup"]!['image']!,
                           tap: () {
                             Navigator.pushReplacementNamed(context, '/pro');
                           }),
                       CardSmall(
                           cta: "View article",
-                          title: homeCards["Coffee"]['title'],
-                          img: homeCards["Coffee"]['image'],
+                          title: homeCards["Coffee"]!['title']!,
+                          img: homeCards["Coffee"]!['image']!,
                           tap: () {
                             Navigator.pushReplacementNamed(context, '/pro');
                           })
@@ -619,8 +639,8 @@ class _ComponentsState extends State<Components> {
                   SizedBox(height: 8.0),
                   CardHorizontal(
                       cta: "View article",
-                      title: homeCards["Fashion"]['title'],
-                      img: homeCards["Fashion"]['image'],
+                      title: homeCards["Fashion"]!['title']!,
+                      img: homeCards["Fashion"]!['image']!,
                       tap: () {
                         Navigator.pushReplacementNamed(context, '/pro');
                       }),
@@ -629,16 +649,16 @@ class _ComponentsState extends State<Components> {
                     padding: const EdgeInsets.only(bottom: 8.0),
                     child: CardSquare(
                         cta: "View article",
-                        title: homeCards["Argon"]['title'],
-                        img: homeCards["Argon"]['image'],
+                        title: homeCards["Argon"]!['title']!,
+                        img: homeCards["Argon"]!['image']!,
                         tap: () {
                           Navigator.pushReplacementNamed(context, '/pro');
                         }),
                   ),
                   CardCategory(
                       tap: () {},
-                      title: homeCards["Argon"]['title'],
-                      img: homeCards["Argon"]['image']),
+                      title: homeCards["Argon"]!['title']!,
+                      img: homeCards["Argon"]!['image']!),
                 ],
               ),
               Padding(
@@ -664,7 +684,7 @@ class _ComponentsState extends State<Components> {
                           fontSize: 16)),
                 ),
               ),
-              ProductCarousel(imgArray: imgArray)
+              ProductCarousel(imgArray: imgArray, key: UniqueKey(),)
             ]),
           ),
         )));
