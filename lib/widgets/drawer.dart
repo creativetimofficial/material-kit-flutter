@@ -8,7 +8,7 @@ import 'package:material_kit_flutter/widgets/drawer-tile.dart';
 class MaterialDrawer extends StatelessWidget {
   final String currentPage;
 
-  MaterialDrawer({this.currentPage});
+  MaterialDrawer({required this.currentPage});
 
   @override
   Widget build(BuildContext context) {

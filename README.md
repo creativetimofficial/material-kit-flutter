@@ -1,7 +1,7 @@
 # [Material Kit Pro Flutter](https://creativetimofficial.github.io/material-kit-pro-flutter) [![Tweet](https://img.shields.io/twitter/url/http/shields.io.svg?style=social&logo=twitter)](https://twitter.com/intent/tweet?text=Start%20Your%20Development%20With%20A%20Badass%20Flutter%20app%20inspired%20by%20Material%20Design.%0Ahttps%3A//demos.creative-tim.com/material-kit-pro-flutter/)
 
 
- ![version](https://img.shields.io/badge/version-1.0.0-blue.svg)  [![GitHub issues open](https://img.shields.io/github/issues/creativetimofficial/material-kit-flutter.svg?style=flat)](https://github.com/creativetimofficial/material-kit-flutter/issues?q=is%3Aopen+is%3Aissue) [![GitHub issues closed](https://img.shields.io/github/issues-closed-raw/creativetimofficial/material-kit-flutter.svg?maxAge=2592000)](https://github.com/creativetimofficial/material-kit-flutter/issues?q=is%3Aissue+is%3Aclosed)
+ ![version](https://img.shields.io/badge/version-1.0.1-blue.svg)  [![GitHub issues open](https://img.shields.io/github/issues/creativetimofficial/material-kit-flutter.svg?style=flat)](https://github.com/creativetimofficial/material-kit-flutter/issues?q=is%3Aopen+is%3Aissue) [![GitHub issues closed](https://img.shields.io/github/issues-closed-raw/creativetimofficial/material-kit-flutter.svg?maxAge=2592000)](https://github.com/creativetimofficial/material-kit-flutter/issues?q=is%3Aissue+is%3Aclosed)
 
 
 ![Product Gif](https://raw.githubusercontent.com/creativetimofficial/public-assets/master/material-flutter/opt_mk_flutter_thumbnail.jpg)

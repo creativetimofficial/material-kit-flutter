@@ -4,7 +4,7 @@ import 'package:material_kit_flutter/constants/Theme.dart';
 class PhotoAlbum extends StatelessWidget {
   final List<String> imgArray;
 
-  PhotoAlbum({@required this.imgArray});
+  PhotoAlbum({required this.imgArray});
 
   @override
   Widget build(BuildContext context) {
@@ -40,8 +40,9 @@ class PhotoAlbum extends StatelessWidget {
                       decoration: BoxDecoration(
                           borderRadius: BorderRadius.all(Radius.circular(4.0)),
                           image: DecorationImage(
-                              image: NetworkImage(item), fit: BoxFit.cover))))
-                  .toList()),
+                              image: NetworkImage(item), fit: BoxFit.cover),
+                      ),
+              ),).toList()),
         )
       ],
     );

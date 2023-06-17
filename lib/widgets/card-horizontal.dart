@@ -23,8 +23,8 @@ class CardHorizontal extends StatelessWidget {
         height: 130,
         margin: EdgeInsets.only(top: 10),
         child: GestureDetector(
-          onTap: tap,
-          child: Stack(overflow: Overflow.clip, children: [
+          onTap: () => tap,
+          child: Stack(clipBehavior: Clip.hardEdge, children: [
             Card(
               elevation: 0.7,
               shape: RoundedRectangleBorder(
