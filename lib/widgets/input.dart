@@ -3,15 +3,15 @@ import 'package:material_kit_flutter/constants/Theme.dart';
 
 class Input extends StatelessWidget {
   final String placeholder;
-  final Widget suffixIcon;
-  final Widget prefixIcon;
-  final Function onTap;
-  final Function onChanged;
-  final TextEditingController controller;
+  final Widget? suffixIcon;
+  final Widget? prefixIcon;
+  final VoidCallback? onTap;
+  final bool filled;
+  final Color? fillColor;
+  final ValueChanged<String>? onChanged;
+  final TextEditingController? controller;
   final bool autofocus;
   final Color borderColor;
-  final bool filled;
-  final Color fillColor;
   final Color textColor;
   final Color enabledBorderColor;
   final Color focusedBorderColor;
@@ -20,11 +20,11 @@ class Input extends StatelessWidget {
   final Color hintTextColor;
 
   Input(
-      {this.placeholder,
+      {required this.placeholder,
       this.suffixIcon,
       this.prefixIcon,
       this.onTap,
-      this.filled,
+      this.filled = false,
       this.fillColor,
       this.textColor = Colors.black,
       this.enabledBorderColor = MaterialColors.muted,

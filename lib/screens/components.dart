@@ -91,14 +91,11 @@ class Components extends StatefulWidget {
 }
 
 class _ComponentsState extends State<Components> {
-  bool switchValueOne;
-  bool switchValueTwo;
+  bool switchValueOne = true;
+  bool switchValueTwo = false;
 
+  @override
   void initState() {
-    setState(() {
-      switchValueOne = true;
-      switchValueTwo = false;
-    });
     super.initState();
   }
 
@@ -107,6 +104,8 @@ class _ComponentsState extends State<Components> {
     return Scaffold(
         appBar: Navbar(
           title: "Elements",
+          tags: const [],
+          searchController: TextEditingController(),
         ),
         backgroundColor: MaterialColors.bgColorScreen,
         drawer: MaterialDrawer(currentPage: "Components"),
@@ -132,16 +131,18 @@ class _ComponentsState extends State<Components> {
                 child: Padding(
                   padding:
                       const EdgeInsets.only(left: 34.0, right: 34.0, top: 16),
-                  child: RaisedButton(
-                    textColor: Colors.white,
-                    color: MaterialColors.defaultButton,
+                  child: ElevatedButton(
+                    style: ElevatedButton.styleFrom(
+                      foregroundColor: Colors.white,
+                      backgroundColor: MaterialColors.defaultButton,
+                      shape: RoundedRectangleBorder(
+                        borderRadius: BorderRadius.circular(4.0),
+                      ),
+                    ),
                     onPressed: () {
                       // Respond to button press
                       Navigator.pushReplacementNamed(context, '/home');
                     },
-                    shape: RoundedRectangleBorder(
-                      borderRadius: BorderRadius.circular(4.0),
-                    ),
                     child: Padding(
                         padding: EdgeInsets.only(
                             left: 16.0, right: 16.0, top: 12, bottom: 12),
@@ -156,16 +157,18 @@ class _ComponentsState extends State<Components> {
                 child: Padding(
                   padding:
                       const EdgeInsets.only(left: 34.0, right: 34.0, top: 8),
-                  child: RaisedButton(
-                    textColor: Colors.white,
-                    color: MaterialColors.primary,
+                  child: ElevatedButton(
+                    style: ElevatedButton.styleFrom(
+                      foregroundColor: Colors.white,
+                      backgroundColor: MaterialColors.primary,
+                      shape: RoundedRectangleBorder(
+                        borderRadius: BorderRadius.circular(4.0),
+                      ),
+                    ),
                     onPressed: () {
                       // Respond to button press
                       Navigator.pushReplacementNamed(context, '/home');
                     },
-                    shape: RoundedRectangleBorder(
-                      borderRadius: BorderRadius.circular(4.0),
-                    ),
                     child: Padding(
                         padding: EdgeInsets.only(
                             left: 16.0, right: 16.0, top: 12, bottom: 12),
@@ -180,16 +183,18 @@ class _ComponentsState extends State<Components> {
                 child: Padding(
                   padding:
                       const EdgeInsets.only(left: 34.0, right: 34.0, top: 8),
-                  child: RaisedButton(
-                    textColor: Colors.white,
-                    color: MaterialColors.info,
+                  child: ElevatedButton(
+                    style: ElevatedButton.styleFrom(
+                      foregroundColor: Colors.white,
+                      backgroundColor: MaterialColors.info,
+                      shape: RoundedRectangleBorder(
+                        borderRadius: BorderRadius.circular(4.0),
+                      ),
+                    ),
                     onPressed: () {
                       // Respond to button press
                       Navigator.pushReplacementNamed(context, '/home');
                     },
-                    shape: RoundedRectangleBorder(
-                      borderRadius: BorderRadius.circular(4.0),
-                    ),
                     child: Padding(
                         padding: EdgeInsets.only(
                             left: 16.0, right: 16.0, top: 12, bottom: 12),
@@ -204,16 +209,18 @@ class _ComponentsState extends State<Components> {
                 child: Padding(
                   padding:
                       const EdgeInsets.only(left: 34.0, right: 34.0, top: 8),
-                  child: RaisedButton(
-                    textColor: Colors.white,
-                    color: MaterialColors.success,
+                  child: ElevatedButton(
+                    style: ElevatedButton.styleFrom(
+                      foregroundColor: Colors.white,
+                      backgroundColor: MaterialColors.success,
+                      shape: RoundedRectangleBorder(
+                        borderRadius: BorderRadius.circular(4.0),
+                      ),
+                    ),
                     onPressed: () {
                       // Respond to button press
                       Navigator.pushReplacementNamed(context, '/home');
                     },
-                    shape: RoundedRectangleBorder(
-                      borderRadius: BorderRadius.circular(4.0),
-                    ),
                     child: Padding(
                         padding: EdgeInsets.only(
                             left: 16.0, right: 16.0, top: 12, bottom: 12),
@@ -228,16 +235,18 @@ class _ComponentsState extends State<Components> {
                 child: Padding(
                   padding:
                       const EdgeInsets.only(left: 34.0, right: 34.0, top: 8),
-                  child: RaisedButton(
-                    textColor: Colors.white,
-                    color: MaterialColors.warning,
+                  child: ElevatedButton(
+                    style: ElevatedButton.styleFrom(
+                      foregroundColor: Colors.white,
+                      backgroundColor: MaterialColors.warning,
+                      shape: RoundedRectangleBorder(
+                        borderRadius: BorderRadius.circular(4.0),
+                      ),
+                    ),
                     onPressed: () {
                       // Respond to button press
                       Navigator.pushReplacementNamed(context, '/home');
                     },
-                    shape: RoundedRectangleBorder(
-                      borderRadius: BorderRadius.circular(4.0),
-                    ),
                     child: Padding(
                         padding: EdgeInsets.only(
                             left: 16.0, right: 16.0, top: 12, bottom: 12),
@@ -252,16 +261,18 @@ class _ComponentsState extends State<Components> {
                 child: Padding(
                   padding:
                       const EdgeInsets.only(left: 34.0, right: 34.0, top: 8),
-                  child: RaisedButton(
-                    textColor: Colors.white,
-                    color: MaterialColors.error,
+                  child: ElevatedButton(
+                    style: ElevatedButton.styleFrom(
+                      foregroundColor: Colors.white,
+                      backgroundColor: MaterialColors.error,
+                      shape: RoundedRectangleBorder(
+                        borderRadius: BorderRadius.circular(4.0),
+                      ),
+                    ),
                     onPressed: () {
                       // Respond to button press
                       Navigator.pushReplacementNamed(context, '/home');
                     },
-                    shape: RoundedRectangleBorder(
-                      borderRadius: BorderRadius.circular(4.0),
-                    ),
                     child: Padding(
                         padding: EdgeInsets.only(
                             left: 16.0, right: 16.0, top: 12, bottom: 12),
@@ -483,13 +494,21 @@ class _ComponentsState extends State<Components> {
               Navbar(
                 title: "Regular",
                 backButton: true,
+                tags: const [],
+                searchController: TextEditingController(),
               ),
               Padding(
                 padding: const EdgeInsets.only(top: 16.0),
-                child: Navbar(
+                child: SizedBox(
+                  height: 180.0,
+                  child: Navbar(
                     title: "Custom background",
                     backButton: true,
-                    bgColor: MaterialColors.primary),
+                    bgColor: MaterialColors.primary,
+                    tags: const [],
+                    searchController: TextEditingController(),
+                  ),
+                ),
               ),
               Padding(
                 padding: const EdgeInsets.only(top: 16.0),
@@ -499,6 +518,8 @@ class _ComponentsState extends State<Components> {
                   categoryOne: "Incredible",
                   categoryTwo: "Customization",
                   backButton: true,
+                  tags: const [],
+                  searchController: TextEditingController(),
                 ),
               ),
               Padding(
@@ -507,6 +528,8 @@ class _ComponentsState extends State<Components> {
                   title: "Search",
                   searchBar: true,
                   backButton: true,
+                  tags: const [],
+                  searchController: TextEditingController(),
                 ),
               ),
               Padding(
@@ -539,38 +562,41 @@ class _ComponentsState extends State<Components> {
               Padding(
                 padding: const EdgeInsets.symmetric(
                     horizontal: 24.0, vertical: 40.0),
-                child: Row(
-                  mainAxisAlignment: MainAxisAlignment.spaceAround,
-                  crossAxisAlignment: CrossAxisAlignment.center,
-                  children: [
-                    RawMaterialButton(
-                      onPressed: () {},
-                      elevation: 4.0,
-                      fillColor: MaterialColors.socialFacebook,
-                      child: Icon(FontAwesomeIcons.facebook,
-                          size: 24.0, color: Colors.white),
-                      padding: EdgeInsets.all(15.0),
-                      shape: CircleBorder(),
-                    ),
-                    RawMaterialButton(
-                      onPressed: () {},
-                      elevation: 4.0,
-                      fillColor: MaterialColors.socialTwitter,
-                      child: Icon(FontAwesomeIcons.twitter,
-                          size: 24.0, color: Colors.white),
-                      padding: EdgeInsets.all(15.0),
-                      shape: CircleBorder(),
-                    ),
-                    RawMaterialButton(
-                      onPressed: () {},
-                      elevation: 4.0,
-                      fillColor: MaterialColors.socialDribbble,
-                      child: Icon(FontAwesomeIcons.dribbble,
-                          size: 24.0, color: Colors.white),
-                      padding: EdgeInsets.all(15.0),
-                      shape: CircleBorder(),
-                    )
-                  ],
+                child: SingleChildScrollView(
+                  scrollDirection: Axis.horizontal,
+                  child: Row(
+                    mainAxisAlignment: MainAxisAlignment.spaceAround,
+                    crossAxisAlignment: CrossAxisAlignment.center,
+                    children: [
+                      RawMaterialButton(
+                        onPressed: () {},
+                        elevation: 4.0,
+                        fillColor: MaterialColors.socialFacebook,
+                        child: Icon(FontAwesomeIcons.facebook,
+                            size: 24.0, color: Colors.white),
+                        padding: EdgeInsets.all(15.0),
+                        shape: CircleBorder(),
+                      ),
+                      RawMaterialButton(
+                        onPressed: () {},
+                        elevation: 4.0,
+                        fillColor: MaterialColors.socialTwitter,
+                        child: Icon(FontAwesomeIcons.twitter,
+                            size: 24.0, color: Colors.white),
+                        padding: EdgeInsets.all(15.0),
+                        shape: CircleBorder(),
+                      ),
+                      RawMaterialButton(
+                        onPressed: () {},
+                        elevation: 4.0,
+                        fillColor: MaterialColors.socialDribbble,
+                        child: Icon(FontAwesomeIcons.dribbble,
+                            size: 24.0, color: Colors.white),
+                        padding: EdgeInsets.all(15.0),
+                        shape: CircleBorder(),
+                      )
+                    ],
+                  ),
                 ),
               ),
               Padding(
@@ -590,8 +616,8 @@ class _ComponentsState extends State<Components> {
                     padding: const EdgeInsets.only(top: 16.0),
                     child: CardHorizontal(
                         cta: "View article",
-                        title: homeCards["Ice Cream"]['title'],
-                        img: homeCards["Ice Cream"]['image'],
+                        title: homeCards["Ice Cream"]!['title'] ?? '',
+                        img: homeCards["Ice Cream"]!['image'] ?? '',
                         tap: () {
                           Navigator.pushReplacementNamed(context, '/pro');
                         }),
@@ -602,15 +628,15 @@ class _ComponentsState extends State<Components> {
                     children: [
                       CardSmall(
                           cta: "View article",
-                          title: homeCards["Makeup"]['title'],
-                          img: homeCards["Makeup"]['image'],
+                          title: (homeCards["Makeup"] ?? const {})['title'] ?? '',
+                          img: (homeCards["Makeup"] ?? const {})['image'] ?? '',
                           tap: () {
                             Navigator.pushReplacementNamed(context, '/pro');
                           }),
                       CardSmall(
                           cta: "View article",
-                          title: homeCards["Coffee"]['title'],
-                          img: homeCards["Coffee"]['image'],
+                          title: (homeCards["Coffee"] ?? const {})['title'] ?? '',
+                          img: (homeCards["Coffee"] ?? const {})['image'] ?? '',
                           tap: () {
                             Navigator.pushReplacementNamed(context, '/pro');
                           })
@@ -619,8 +645,8 @@ class _ComponentsState extends State<Components> {
                   SizedBox(height: 8.0),
                   CardHorizontal(
                       cta: "View article",
-                      title: homeCards["Fashion"]['title'],
-                      img: homeCards["Fashion"]['image'],
+                      title: (homeCards["Fashion"] ?? const {})['title'] ?? '',
+                      img: (homeCards["Fashion"] ?? const {})['image'] ?? '',
                       tap: () {
                         Navigator.pushReplacementNamed(context, '/pro');
                       }),
@@ -629,16 +655,16 @@ class _ComponentsState extends State<Components> {
                     padding: const EdgeInsets.only(bottom: 8.0),
                     child: CardSquare(
                         cta: "View article",
-                        title: homeCards["Argon"]['title'],
-                        img: homeCards["Argon"]['image'],
+                        title: (homeCards["Argon"] ?? const {})['title'] ?? '',
+                        img: (homeCards["Argon"] ?? const {})['image'] ?? '',
                         tap: () {
                           Navigator.pushReplacementNamed(context, '/pro');
                         }),
                   ),
                   CardCategory(
                       tap: () {},
-                      title: homeCards["Argon"]['title'],
-                      img: homeCards["Argon"]['image']),
+                      title: (homeCards["Argon"] ?? const {})['title'] ?? '',
+                      img: (homeCards["Argon"] ?? const {})['image'] ?? ''),
                 ],
               ),
               Padding(

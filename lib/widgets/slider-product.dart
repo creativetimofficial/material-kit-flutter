@@ -1,6 +1,5 @@
-import 'dart:ui';
 import 'package:flutter/material.dart';
-import 'package:carousel_slider/carousel_slider.dart';
+import 'package:carousel_slider/carousel_slider.dart' as cs;
 
 import 'package:material_kit_flutter/constants/Theme.dart';
 
@@ -8,8 +7,8 @@ class ProductCarousel extends StatefulWidget {
   final List<Map<String, String>> imgArray;
 
   const ProductCarousel({
-    Key key,
-    @required this.imgArray,
+    Key? key,
+    required this.imgArray,
   }) : super(key: key);
 
   @override
@@ -17,11 +16,9 @@ class ProductCarousel extends StatefulWidget {
 }
 
 class _ProductCarouselState extends State<ProductCarousel> {
-  int _current = 0;
-
   @override
   Widget build(BuildContext context) {
-    return CarouselSlider(
+    return cs.CarouselSlider(
       items: widget.imgArray
           .map((item) => Container(
                 child: Column(
@@ -41,7 +38,7 @@ class _ProductCarouselState extends State<ProductCarousel> {
                           child: ClipRRect(
                             borderRadius: BorderRadius.circular(4),
                             child: Image.network(
-                              item["img"],
+                              item["img"] ?? '',
                               fit: BoxFit.cover,
                               alignment: Alignment.topCenter,
                             ),
@@ -53,17 +50,17 @@ class _ProductCarouselState extends State<ProductCarousel> {
                       padding: const EdgeInsets.only(top: 16.0),
                       child: Column(
                         children: [
-                          Text(item["price"],
+                          Text(item["price"] ?? '',
                               style: TextStyle(
                                   fontSize: 16, color: MaterialColors.caption)),
-                          Text(item["title"],
+                          Text(item["title"] ?? '',
                               style:
                                   TextStyle(fontSize: 32, color: Colors.black)),
                           Padding(
                             padding: const EdgeInsets.only(
                                 left: 16.0, right: 16.0, top: 8),
                             child: Text(
-                              item["description"],
+                              item["description"] ?? '',
                               style: TextStyle(
                                   fontSize: 16, color: MaterialColors.muted),
                               textAlign: TextAlign.center,
@@ -76,7 +73,7 @@ class _ProductCarouselState extends State<ProductCarousel> {
                 ),
               ))
           .toList(),
-      options: CarouselOptions(
+      options: cs.CarouselOptions(
           height: 530,
           autoPlay: false,
           enlargeCenterPage: false,
@@ -86,7 +83,7 @@ class _ProductCarouselState extends State<ProductCarousel> {
           // viewportFraction: 1.0,
           onPageChanged: (index, reason) {
             setState(() {
-              _current = index;
+              // _current = index;
             });
           }),
     );

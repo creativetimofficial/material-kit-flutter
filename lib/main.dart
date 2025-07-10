@@ -19,11 +19,17 @@ class MaterialKitPROFlutter extends StatelessWidget {
         initialRoute: "/onboarding",
         routes: <String, WidgetBuilder>{
           "/onboarding": (BuildContext context) => new Onboarding(),
-          "/pro": (BuildContext context) => new Pro(),
+          "/pro": (BuildContext context) => new Pro(title: "Material Kit PRO"),
           "/home": (BuildContext context) => new Home(),
           "/components": (BuildContext context) => new Components(),
           "/profile": (BuildContext context) => new Profile(),
           "/settings": (BuildContext context) => new Settings(),
+          "/woman": (BuildContext context) => new Pro(title: "Woman"),
+          "/man": (BuildContext context) => new Pro(title: "Man"),
+          "/kids": (BuildContext context) => new Pro(title: "Kids"),
+          "/newcollection": (BuildContext context) => new Pro(title: "New Collection"),
+          "/signin": (BuildContext context) => new Pro(title: "Sign In"),
+          "/signup": (BuildContext context) => new Pro(title: "Sign Up"),
         });
   }
 }

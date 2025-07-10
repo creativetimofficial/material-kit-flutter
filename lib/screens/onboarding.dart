@@ -1,4 +1,3 @@
-import 'dart:ui';
 import 'package:flutter/material.dart';
 
 import 'package:material_kit_flutter/constants/Theme.dart';
@@ -55,15 +54,17 @@ class Onboarding extends StatelessWidget {
                   padding: const EdgeInsets.only(top: 16.0),
                   child: SizedBox(
                     width: double.infinity,
-                    child: FlatButton(
-                      textColor: Colors.white,
-                      color: MaterialColors.info,
+                    child: ElevatedButton(
+                      style: ElevatedButton.styleFrom(
+                        foregroundColor: Colors.white,
+                        backgroundColor: MaterialColors.info,
+                        shape: RoundedRectangleBorder(
+                          borderRadius: BorderRadius.circular(4.0),
+                        ),
+                      ),
                       onPressed: () {
                         Navigator.pushReplacementNamed(context, '/home');
                       },
-                      shape: RoundedRectangleBorder(
-                        borderRadius: BorderRadius.circular(4.0),
-                      ),
                       child: Padding(
                           padding: EdgeInsets.only(
                               left: 16.0, right: 16.0, top: 12, bottom: 12),

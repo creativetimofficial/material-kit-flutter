@@ -1,4 +1,3 @@
-import 'dart:ui';
 import 'package:flutter/material.dart';
 import 'package:material_kit_flutter/constants/Theme.dart';
 
@@ -24,6 +23,8 @@ class Profile extends StatelessWidget {
         appBar: Navbar(
           title: "Profile",
           transparent: true,
+          tags: const [],
+          searchController: TextEditingController(),
         ),
         backgroundColor: MaterialColors.bgColorScreen,
         drawer: MaterialDrawer(currentPage: "Profile"),
@@ -45,8 +46,8 @@ class Profile extends StatelessWidget {
                       begin: Alignment.center,
                       end: Alignment.bottomCenter,
                       colors: [
-                    Colors.black.withOpacity(0),
-                    Colors.black.withOpacity(0.9),
+                    Colors.black..withValues(alpha: 0),
+                    Colors.black.withValues(alpha: 0.9),
                   ])),
             ),
             Container(
@@ -123,7 +124,7 @@ class Profile extends StatelessWidget {
                   decoration: BoxDecoration(
                       boxShadow: [
                         BoxShadow(
-                            color: Colors.black.withOpacity(0.2),
+                            color: Colors.black.withValues(alpha: 0.2),
                             spreadRadius: 8,
                             blurRadius: 10,
                             offset: Offset(0, 0))

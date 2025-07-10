@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:material_kit_flutter/constants/Theme.dart';
 
 class CardCategory extends StatelessWidget {
   CardCategory(
@@ -8,7 +7,7 @@ class CardCategory extends StatelessWidget {
       this.tap = defaultFunc});
 
   final String img;
-  final Function tap;
+  final VoidCallback? tap;
   final String title;
 
   static void defaultFunc() {
@@ -39,11 +38,17 @@ class CardCategory extends StatelessWidget {
                         color: Colors.black45,
                         borderRadius: BorderRadius.all(Radius.circular(6.0)))),
                 Center(
-                  child: Text(title,
-                      style: TextStyle(
-                          color: Colors.white,
-                          fontWeight: FontWeight.w600,
-                          fontSize: 18.0)),
+                  child: Padding(
+                    padding: const EdgeInsets.symmetric(horizontal: 8.0),
+                    child: FittedBox(
+                      fit: BoxFit.scaleDown,
+                      child: Text(title,
+                          style: TextStyle(
+                              color: Colors.white,
+                              fontWeight: FontWeight.w600,
+                              fontSize: 18.0)),
+                    ),
+                  ),
                 )
               ])),
         ));
