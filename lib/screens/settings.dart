@@ -14,14 +14,11 @@ class Settings extends StatefulWidget {
 }
 
 class _SettingsState extends State<Settings> {
-  bool switchValueOne;
-  bool switchValueTwo;
+  bool switchValueOne = true;
+  bool switchValueTwo = false;
 
+  @override
   void initState() {
-    setState(() {
-      switchValueOne = true;
-      switchValueTwo = false;
-    });
     super.initState();
   }
 
@@ -30,6 +27,8 @@ class _SettingsState extends State<Settings> {
     return Scaffold(
         appBar: Navbar(
           title: "Settings",
+          tags: const [],
+          searchController: TextEditingController(),
         ),
         drawer: MaterialDrawer(currentPage: "Settings"),
         backgroundColor: MaterialColors.bgColorScreen,

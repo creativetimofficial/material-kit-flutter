@@ -10,7 +10,7 @@ class CardSmall extends StatelessWidget {
 
   final String cta;
   final String img;
-  final Function tap;
+  final VoidCallback? tap;
   final String title;
 
   static void defaultFunc() {
@@ -21,11 +21,11 @@ class CardSmall extends StatelessWidget {
   Widget build(BuildContext context) {
     return Flexible(
         child: Container(
-      height: 235,
+      height: 250,
       margin: EdgeInsets.only(top: 10),
       child: GestureDetector(
           onTap: tap,
-          child: Stack(overflow: Overflow.clip, children: [
+          child: Stack(children: [
             Card(
                 elevation: 0.7,
                 shape: RoundedRectangleBorder(
@@ -71,7 +71,7 @@ class CardSmall extends StatelessWidget {
                         decoration: BoxDecoration(
                             boxShadow: [
                               BoxShadow(
-                                  color: Colors.black.withOpacity(0.06),
+                                  color: Colors.black.withValues(alpha: 0.06),
                                   spreadRadius: 2,
                                   blurRadius: 1,
                                   offset: Offset(0, 0))

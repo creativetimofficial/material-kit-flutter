@@ -49,9 +49,8 @@ class Home extends StatelessWidget {
     return Scaffold(
         appBar: Navbar(
           title: "Home",
-          searchBar: true,
-          categoryOne: "Categories",
-          categoryTwo: "Best Deals",
+          tags: const [],
+          searchController: TextEditingController(),
         ),
         backgroundColor: MaterialColors.bgColorScreen,
         // key: _scaffoldKey,
@@ -65,8 +64,8 @@ class Home extends StatelessWidget {
                   padding: const EdgeInsets.only(top: 16.0),
                   child: CardHorizontal(
                       cta: "View article",
-                      title: homeCards["Ice Cream"]['title'],
-                      img: homeCards["Ice Cream"]['image'],
+                      title: homeCards["Ice Cream"]!['title'] ?? '',
+                      img: homeCards["Ice Cream"]!['image'] ?? '',
                       tap: () {
                         Navigator.pushReplacementNamed(context, '/pro');
                       }),
@@ -77,15 +76,15 @@ class Home extends StatelessWidget {
                   children: [
                     CardSmall(
                         cta: "View article",
-                        title: homeCards["Makeup"]['title'],
-                        img: homeCards["Makeup"]['image'],
+                        title: (homeCards["Makeup"] ?? const {})['title'] ?? '',
+                        img: (homeCards["Makeup"] ?? const {})['image'] ?? '',
                         tap: () {
                           Navigator.pushReplacementNamed(context, '/pro');
                         }),
                     CardSmall(
                         cta: "View article",
-                        title: homeCards["Coffee"]['title'],
-                        img: homeCards["Coffee"]['image'],
+                        title: (homeCards["Coffee"] ?? const {})['title'] ?? '',
+                        img: (homeCards["Coffee"] ?? const {})['image'] ?? '',
                         tap: () {
                           Navigator.pushReplacementNamed(context, '/pro');
                         })
@@ -94,8 +93,8 @@ class Home extends StatelessWidget {
                 SizedBox(height: 8.0),
                 CardHorizontal(
                     cta: "View article",
-                    title: homeCards["Fashion"]['title'],
-                    img: homeCards["Fashion"]['image'],
+                    title: (homeCards["Fashion"] ?? const {})['title'] ?? '',
+                    img: (homeCards["Fashion"] ?? const {})['image'] ?? '',
                     tap: () {
                       Navigator.pushReplacementNamed(context, '/pro');
                     }),
@@ -104,8 +103,8 @@ class Home extends StatelessWidget {
                   padding: const EdgeInsets.only(bottom: 32.0),
                   child: CardSquare(
                       cta: "View article",
-                      title: homeCards["Argon"]['title'],
-                      img: homeCards["Argon"]['image'],
+                      title: (homeCards["Argon"] ?? const {})['title'] ?? '',
+                      img: (homeCards["Argon"] ?? const {})['image'] ?? '',
                       tap: () {
                         Navigator.pushReplacementNamed(context, '/pro');
                       }),
